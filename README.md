@@ -18,7 +18,7 @@ This tutorial will guide you through the steps to deploy the 2048 game applicati
 1. **Navigate to your project directory** where your Dockerfile is located.
 
     ```sh
-    cd ~/docker-fundamentals/build-a-simple-containerized-application/app1-2048
+    cd ~/path/to/file/app1-2048/
     ```
 
 2. **Create a Dockerfile** with the following content if not already present:
