@@ -97,14 +97,14 @@ This tutorial will guide you through the steps to deploy the 2048 game applicati
       replicas: 3
       selector:
         matchLabels:
-          app: game-2048
+          app: "game-2048"
       template:
         metadata:
           labels:
-            app: game-2048
+            app: "game-2048"
         spec:
           containers:
-          - name: game-2048
+          - name: "game-2048"  # Ensure this is a string
             image: elevenisnoteven/dockerized-k8s-2048:latest
             ports:
             - containerPort: 80
@@ -118,13 +118,13 @@ This tutorial will guide you through the steps to deploy the 2048 game applicati
     metadata:
       name: game-2048-service
     spec:
-      type: LoadBalancer
       selector:
-        app: game-2048
+        app: "game-2048"
       ports:
         - protocol: TCP
           port: 80
           targetPort: 80
+      type: LoadBalancer
     ```
 
 ### Step 4: Deploy the Application to Kubernetes
