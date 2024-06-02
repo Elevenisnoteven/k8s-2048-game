@@ -31,7 +31,7 @@ This tutorial will guide you through the steps to deploy the 2048 game applicati
 3. **Build the Docker image** using the following command:
 
     ```sh
-    docker build -t elevenisnoteven/dockerized-k8s-2048 .
+    docker build -t YOUR_DOCKER_USERNAME/dockerized-k8s-2048 .
     ```
 
     This command will output something similar to:
@@ -65,14 +65,14 @@ This tutorial will guide you through the steps to deploy the 2048 game applicati
 2. **Push the Docker image** to Docker Hub:
 
     ```sh
-    docker push elevenisnoteven/dockerized-k8s-2048
+    docker push YOUR_DOCKER_USERNAME/dockerized-k8s-2048
     ```
 
     You should see output indicating the image is being pushed:
 
     ```
     Using default tag: latest
-    The push refers to repository [docker.io/elevenisnoteven/dockerized-k8s-2048]
+    The push refers to repository [docker.io/YOUR_DOCKER_USERNAME/dockerized-k8s-2048]
     196002bdb2ce: Pushed
     3f6a3d22b9ce: Pushed
     261a5dc153b4: Pushed
